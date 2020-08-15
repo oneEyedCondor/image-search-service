@@ -1,0 +1,17 @@
+.image-item {
+  position: relative;
+  cursor: pointer;
+
+  img {
+    width: 100%;
+    margin-bottom: 0.1em;
+  }
+
+  .icon-fav {
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    font-size: 2.5rem;
+    color: #4caf50;
+  }
+}
