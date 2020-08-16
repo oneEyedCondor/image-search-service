@@ -1,0 +1,12 @@
+version: "3"
+services:
+  server:
+    build: ./server
+    ports:
+      - "4000:4000"
+    container_name: image-search-service-server
+  client:
+    build: ./client
+    ports:
+      - "3000:80"
+    container_name: image-search-service-client
