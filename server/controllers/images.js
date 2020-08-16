@@ -21,7 +21,6 @@ const addFavoriteImageValidation = (data) => {
 //Receiving data from a third-party service
 const flickrSearchImages = async (text) => {
   const result = await flickr.photos.search({ text });
-  //   https://farm{farm-id}.staticflickr.com/{server-id}/{id}_{secret}.jpg
 
   //Conversion the data
   return result.body.photos.photo.map((p) => ({
